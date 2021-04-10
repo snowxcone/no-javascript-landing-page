@@ -6,3 +6,5 @@ Here is a 1 minute video walkthrough of the landing page as of April 9, 2021: ht
 
 If you have any feedback/suggestions, feel free to join our discord https://discord.com/invite/ezxCvnMrVy and write your comments in our Suggestions channel. 
 
+Note: I did not upload the media folder which contains the images of my emotes and bit badges as they are not free to distribute <3 
+
