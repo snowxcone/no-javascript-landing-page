@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/674cca6809.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cones of Snow</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- 
+        Hamburger menu:
+        Adapted code from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+       -->
+      <img src="media/logo.png" id="header-logo" />
+      <a href="#menu" id="menu-toggle">
+        <i class="far fa-snowflake"></i>
+      </a>
+      <nav id="menu">
+        <a href="#menu-toggle" id="menu-x">
+          <i class="far fa-times-circle"></i>
+        </a>
+        <ul>
+          <li><a href="#about-me-anchor">About me</a></li>
+          <li><a href="#links-anchor">Links</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="#guestbook-anchor">Guestbook</a></li>
+        </ul>
+      </nav>
+      <a href="#menu-toggle" id="backdrop" tabindex="-1" hidden></a>
+    </header>
+
+    <div class="container">
+      <a class="anchor" id="about-me-anchor"></a>
+      <video autoplay muted loop id="opening-video">
+        <source src="media/snowflake.mp4" type="video/mp4">
+      </video>
+      <section id="about-me">
+        <img src="media/logo.png" id="opening-page-logo" alt="Cones of Snow" />
+        <button id="start-button">hi! i'm snow!</button></a>
+      </section>
+
+      <a class="anchor" id="updates-anchor"></a>
+      <section id="updates">
+        <h2 id="updates-title">Featured Updates</h2>
+        <img
+          src="media/grid.jpg"
+          class="background-image"
+          id="grid-background"
+        />
+        <div class="scrolling-container">
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">12pm</p>
+              <p class="card-headline">Feed Coco</p>
+              <p class="card-description">Gave her lots of chicken</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">3pm</p>
+              <p class="card-headline">Pat Coco</p>
+              <p class="card-description">Gave her lots of pats</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">6pm</p>
+              <p class="card-headline">Love Coco</p>
+              <p class="card-description">Gave her lots of love</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a class="anchor" id="links-anchor"></a>
+      <section id="links">
+        <p class="preface-text">Here are my</p>
+        <p class="emphasized-text">links</p>
+        <br />
+        <nav id="tabs">
+          <!-- 
+            Tabbed areas:
+            Adapted code from https://css-tricks.com/the-checkbox-hack/
+          -->
+          <div class="tab">
+            <input
+              type="radio"
+              id="twitch"
+              name="social-choices"
+              checked
+              hidden
+            />
+            <label for="twitch">Twitch</label>
+            <div class="social-blurb">
+              <img src="media/angel.png" class="social-image" />
+              <p class="title">beep boop</p>
+              <p class="description">twitch.tv/yay</p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="youtube" name="social-choices" hidden />
+            <label for="youtube">YouTube</label>
+            <div class="social-blurb">
+              <img src="media/boop.png" class="social-image" />
+              <p class="title">plip plop</p>
+              <p class="description">youtube.com/yay</p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="instagram" name="social-choices" hidden />
+            <label for="instagram">Instagram</label>
+            <div class="social-blurb">
+              <img src="media/hug.png" class="social-image" />
+              <p class="title">woot woot</p>
+              <p class="description">instagram.com/yay</p>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <a class="anchor" id="projects-anchor"></a>
+      <section id="projects">
+        <img src="media/stars.gif" id="projects-background-image">
+        <h1>current course projects</h1>
+        <nav id="carousel">
+          <!-- 
+            Carousel:
+            Adapted code from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8
+          -->
+          <input
+            type="radio"
+            id="item1"
+            name="carousel-selection"
+            checked
+            hidden
+          />
+          <div class="carousel-item">
+            <label for="item2" class="right"></label>
+            <label for="item3" class="double-right"></label>
+          </div>
+
+          <input type="radio" id="item2" name="carousel-selection" hidden />
+          <div class="carousel-item">
+            <label for="item1" class="left"></label>
+            <label for="item3" class="right"></label>
+          </div>
+
+          <input type="radio" id="item3" name="carousel-selection" hidden />
+          <div class="carousel-item">
+            <label for="item1" class="double-left"></label>
+            <label for="item2" class="left"></label>
+          </div>
+
+          <div class="carousel-slider">
+            <div class="slider-item">
+              <img src="media/icecream1.png" />
+            </div>
+            <div class="slider-item">
+              <img src="media/icecream2.png" />
+            </div>
+            <div class="slider-item">
+              <img src="media/icecream3.png" />
+            </div>
+          </div>
+
+          <p class="carousel-text">Project 1</p>
+          <p class="carousel-text">Project 2</p>
+          <p class="carousel-text">Project 3</p>
+
+          <img src="media/spaghet.png" class="main-carousel-image" />
+          <img src="media/computer.png" class="main-carousel-image" />
+          <img src="media/snowing.png" class="main-carousel-image" />
+
+          <div id="subheadings">
+            <p class="carousel-subheading">Set up Github</p>
+            <p class="carousel-subheading">Make Landing Page</p>
+            <p class="carousel-subheading">Create buzzfeed quiz</p>
+        </div>
+
+        </nav>
+      </section>
+
+      <a class="anchor" id="guestbook-anchor"></a>
+      <section id="guestbook">
+        <div class="input-card">
+          <h2><i class="far fa-heart"></i> Guestbook</h2>
+          <form action="#" id="guestbook-form">
+            <span>type in your name so i know you stopped by!!</span>
+            <label for="username">
+              <input type="text" id="username" name="username"/>
+            </label>
+            <input type="submit" value="ily"/>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-categories">
+        <a href=#>Contact</a>
+        <a href=#>More info</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitch"> </i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    </footer>
+  </body>
+</html>
