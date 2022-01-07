@@ -1,6 +1,6 @@
 # no-javascript-landing-page
 
-A landing page referencing https://na.leagueoflegends.com/en-us/ made with HTML/CSS, no Javascript. This is my first ever webpage, and I made it on stream at https://twitch.tv/snowxcones! 
+A landing page referencing https://na.leagueoflegends.com/en-us/ made with HTML/CSS, no Javascript. This is my first ever webpage, and I made it on stream at https://twitch.tv/snowxcone! 
 
 Here is a 1 minute video walkthrough of the landing page as of April 9, 2021: https://drive.google.com/file/d/1obo7wVYEcRN4hgpdGcJy2pwgtuFNtKGG/view?usp=sharing
 
